@@ -1,18 +1,19 @@
 Article:
 https://appdividend.com/2018/01/31/angular-ngrx-store-tutorial-example-scratch/
 
-To Install:
-npm install
-ng serve
+How to use
+----------
+
+Run "npm install" inside the project folder
+
+Run "ng serve" to run the app on localhost:4200
 
 
-Notes:
-npm install @ngrx/store --save      OR ng add @ngrx/store@latest
-npm install @ngrx/effects --save    OR ng add @ngrx/effect@latest
-npm install @ngrx/core --save       OR ng add @ngrx/core@latest
-ng add @ngrx/store-devtools@latest
+How to upgrade the CLI
+-----------------------
 
-Add bootstrap 4
-ng add @ng-bootstrap/ng-bootstrap
+npm uninstall -g angular-cli @angular/cli
+npm cache clean --force
+npm install -g @angular/cli
 
 
