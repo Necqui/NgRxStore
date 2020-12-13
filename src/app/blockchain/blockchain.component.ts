@@ -17,25 +17,25 @@ export class BlockchainComponent implements OnInit {
     this.createForm();
   }
 
-  createForm() {
+  createForm(): void {
     this.angForm = this.fb.group({
       name: ['', Validators.required],
       price: ['', Validators.required]
     });
   }
 
-  addCoin(name, price) {
+  addCoin(name, price): void {
     console.log('x');
     this.store.dispatch({
       type: 'ADD_COIN',
-      payload: <Blockchain>{
-        name: name,
-        price: price
-      }
+      payload: {
+        name,
+        price
+      } as Blockchain
     });
   }
 
-  ngOnInit() {
+  ngOnInit(): void {
   }
 
 }

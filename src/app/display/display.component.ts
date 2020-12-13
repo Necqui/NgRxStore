@@ -15,7 +15,7 @@ export class DisplayComponent implements OnInit {
   coins: Blockchain[];
   constructor(private store: Store<AppState>) { }
 
-  ngOnInit() {
+  ngOnInit(): void {
     this.store.select(state => state.blockchain)
       .subscribe({
         next: res => this.coins = res,
@@ -24,11 +24,11 @@ export class DisplayComponent implements OnInit {
       });
   }
 
-  removeCoin(payload) {
-    if (confirm("Are you sure to delete '" + payload.name + "'?")) {
+  removeCoin(payload): void {
+    if (confirm('Are you sure to delete \'' + payload.name + '\'?')) {
       this.store.dispatch({
         type: REMOVE_COIN,
-        payload: payload
+        payload
       });
     }
   }

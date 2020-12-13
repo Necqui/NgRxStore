@@ -8,7 +8,7 @@ export function coinReducer(state: Blockchain[] = [], action) {
         case ADD_COIN:
             return [...state, action.payload];
         case REMOVE_COIN:
-            return state.filter(item => item != action.payload);
+            return state.filter(item => item !== action.payload);
         default:
             return state;
     }
