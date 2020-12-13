@@ -1,10 +1,9 @@
 import { Blockchain } from './../blockchain/blockchain.model';
-import { Action } from '@ngrx/store';
 
 export const ADD_COIN = 'ADD_COIN';
 export const REMOVE_COIN = 'REMOVE_COIN';
 
-export function addCoinReducer(state: Blockchain[] = [], action) {
+export function coinReducer(state: Blockchain[] = [], action) {
     switch (action.type) {
         case ADD_COIN:
             return [...state, action.payload];

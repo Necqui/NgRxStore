@@ -5,7 +5,7 @@ import { ReactiveFormsModule } from '@angular/forms';
 
 import { AppComponent } from './app.component';
 import { BlockchainComponent } from './blockchain/blockchain.component';
-import { addCoinReducer } from './reducers/blockchain.reducer';
+import { coinReducer } from './reducers/blockchain.reducer';
 import { DisplayComponent } from './display/display.component';
 import { StoreDevtoolsModule } from '@ngrx/store-devtools';
 import { environment } from '../environments/environment';
@@ -18,7 +18,7 @@ import { environment } from '../environments/environment';
   ],
   imports: [
     BrowserModule,
-    StoreModule.forRoot({blockchain: addCoinReducer}),
+    StoreModule.forRoot({blockchain: coinReducer}),
     ReactiveFormsModule,
     StoreDevtoolsModule.instrument({ maxAge: 25, logOnly: environment.production })
   ],
