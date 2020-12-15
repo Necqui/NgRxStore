@@ -16,7 +16,7 @@ export class DisplayComponent implements OnInit {
   constructor(private store: Store<AppState>) { }
 
   ngOnInit(): void {
-    this.store.select(state => state.blockchain)
+    this.store.select(state => state.blockchain2)
       .subscribe({
         next: res => this.coins = res,
         error: err => console.error('Observer got an error: ' + err),

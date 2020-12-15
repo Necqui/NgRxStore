@@ -18,7 +18,7 @@ import { environment } from '../environments/environment';
   ],
   imports: [
     BrowserModule,
-    StoreModule.forRoot({blockchain: coinReducer}),
+    StoreModule.forRoot({blockchain2: coinReducer}),
     ReactiveFormsModule,
     StoreDevtoolsModule.instrument({ maxAge: 25, logOnly: environment.production })
   ],
