@@ -9,7 +9,7 @@ Run "npm install" inside the project folder
 Run "ng serve" to run the app on localhost:4200
 
 
-How to upgrade the CLI
+How to upgrade the CLI changed on GitHub
 -----------------------
 
 npm uninstall -g angular-cli @angular/cli
